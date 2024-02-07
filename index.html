@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="shortcut icon" href="./Asset/Be Proficent.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Honk&family=Roboto+Slab:wght@100;500&display=swap"
+        rel="stylesheet">
+
+    <style>
+        /*To Declare Variable for reusability*/
+        :root {
+            --primary_color: #140e12;
+            --secondary_color: #08d493;
+            --white_color: #ffffff;
+        }
+
+        body {
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        li {
+            list-style-type: none;
+            /*To make list without bullet points*/
+
+        }
+
+        .headers {
+            color: var(--white_color);
+            text-decoration: none;
+            font-size: 20px;
+        }
+
+        .headers:hover {
+            color: var(--secondary_color);
+            font-size: larger;
+        }
+
+        span {
+            color: var(--secondary_color);
+        }
+
+        header {
+            background-color: var(--primary_color);
+            color: var(--white_color);
+            display: flex;
+            justify-content: space-around;
+            padding: 10px 20px 8px 30px;
+            position: sticky;
+            border-radius: 10px;
+            margin: 15px;
+            font-family: 'Honk', system-ui;
+
+
+        }
+
+        .first_section {
+            display: flex;
+            gap: 50px;
+
+        }
+
+        main {
+            font-family: 'Roboto Slab', serif;
+
+        }
+
+        section {
+            padding: 100px;
+        }
+
+        #banner {
+            display: flex;
+            gap: 40px;
+        }
+
+        #banner div:first-child {
+            width: 60%;
+        }
+
+        #banner div:last-child {
+            width: 40%;
+        }
+
+        #content h2 {
+            font-size: 40px;
+        }
+
+        #Title {
+            font-size: 25px;
+        }
+
+        .button_class button {
+            background-color: var(--primary_color);
+            color: var(--white_color);
+            border-radius: 12px;
+            padding: 12px;
+            border: 0px;
+            font-family: monospace;
+
+        }
+
+        .button_class button:hover {
+            font-size: larger;
+            background-color: var(--secondary_color);
+        }
+
+        #about {
+            background-color: var(--primary_color);
+            text-align: center;
+            color: var(--secondary_color);
+            border-radius: 30px;
+            padding: 20px;
+
+        }
+
+        .About_headings {
+            font-size: 50px; 
+            text-align: center;  
+            border: 2px solid var(--primary_color);
+            background-color: var(--secondary_color);
+             
+        }
+
+
+        .complete_project
+        {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border: 2px solid var(--primary_color);
+            padding: 20px;
+            margin-top: 10px;     
+            
+        }
+
+        #Contact_Us
+        {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            border: 2px dotted var(--secondary_color);
+        }
+        #fullname
+        {
+            border: 2px solid var(--primary_color);
+            border-radius: 5px;
+        }
+
+        #e_name
+        {
+            border: 2px solid var(--primary_color);
+            border-radius: 5px;
+        }
+        #Text_Box
+        {
+            width: 300px;
+            height: 100px;
+            border: 2px solid var(--primary_color);
+            border-radius: 10px;
+            resize: none;
+        }
+        .submit_btn
+        {
+            background-color: var(--primary_color);
+            color: var(--white_color);
+            border-radius: 8px;
+            padding: 12px;
+        }
+
+        #footer_details
+        { 
+            
+            border: 2px solid var(--primary_color);
+            border-radius: 8px;
+            padding: 10px;
+            background-color: var(--secondary_color);
+            
+        }
+
+
+
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <h2>RITESH<span> PANDEY</span></h2>
+        <ul class="first_section">
+            <li><a class="headers" href="#banner">Home</a></li>
+            <li><a class="headers" href="#about">About</a></li>
+            <li><a class="headers" href="#projects">Projects</a></li>
+            <li><a class="headers" href="#Contact_Us">Contact</a></li>
+        </ul>
+    </header>
+    <main>
+        <section id="banner">
+            <div id="content">
+                <h2>Hi, I'm <span>Ritesh Pandey</span></h2>
+                <p id="Title">Aspiring Full Stack Web Developer</p>
+                <p>This Portfolio WebSite is designed with the help of HTML and CSS and to become proficient in the HTML
+                    and CSS, Trying making projects with Taking HTML and CSS as a Building Blocks for the Early
+                    Projects, Will further enhance the skills and include all sorts of other web developement elements
+                    in projects.</p>
+                <p>Wanna have Discussion and Collaboration for projects, Click Contact</p>
+                <p>Know More About Me , Cick Download CV</p>
+                <div class="button_class">
+                    <button>Contact Me</button>
+                    <button>Download CV</button>
+                </div>
+            </div>
+            <div id="animation">
+                <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs"
+                    type="module"></script>
+
+                <dotlottie-player src="https://lottie.host/2c85e65b-18b9-4cd2-9fae-4a661c90633c/qeFUrbmKFz.json"
+                    background="transparent" speed="1" style="width: 400px; height: 400px;" loop
+                    autoplay></dotlottie-player>
+            </div>
+        </section>
+        <section id="about">
+            <h2 class="About_heading">About</h2>
+            <p>Experienced Data Professional offering 2 years of diverse experience encompassing Power BI, SQL, and SSIS
+                development. My unique skill set enables me to bridge the gap between Data visualization Data Modelling,
+                Creating
+                Power BI Reports, SQL Queries, and ETL processes. I am dedicated to driving informed decision-making
+                through data
+                analysis. Seeking to contribute my skills to a dynamic team and deliver valuable business solutions.</p>
+        </section>
+
+        <section id="projects">
+            <h2 class="About_headings">Projects</h2>
+            <div class="complete_project">
+                <a class="clickable_link" href="https://tubular-horse-1d9e21.netlify.app/" target="_blank"><img
+                        src="./Asset/Project.jpg" alt="image" height="100px"  width="100px"></a>
+
+            </div>
+            <div class="complete_project">
+                <a class="clickable_link" href="https://github.com/riteshlearningcurve2/Full-Stack-Web-Developement"
+                    target="_blank"><img src="./Asset/Project.jpg" alt="image" height="100px" width="100px"></a>
+
+            </div>
+
+        </section>
+
+        <section id="Contact_Us">
+            <h2 class=" Contact_heading">Contact Us</h2>
+            <form action="" id="form">
+                <div>
+                    <input type="text" name="name" id="fullname" placeholder="Enter your Name">
+                </div><br>
+                <div>
+                    <input type="email" name="email" id="e_name" placeholder="Enter Your Email">
+                </div><br>
+                <div>
+                   <textarea name="textarea" id="Text_Box" cols="30" rows="10" placeholder="enter the query"></textarea>
+                </div><br>
+                  <button class="submit_btn" type="submit">Submit</button>
+        </section>
+
+    </main>
+    <footer>
+        <p id="footer_details">This is made for practice purpose</p>
+    </footer>
+
+</body>
+
+</html>
